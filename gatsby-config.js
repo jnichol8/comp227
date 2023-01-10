@@ -100,17 +100,14 @@ const plugins = [
     options: {
       plugins: [
         'gatsby-remark-unwrap-images',
-        'gatsby-remark-picture',
-        {
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: 'language-',
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
-          },
-        },
+        'gatsby-remark-gifs-to-videos',
+        'gatsby-remark-images',
+        // 'gatsby-remark-copy-linked-files',
+        // {
+        //     options: {
+        //         ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+        //     },
+        // },
       ],
     },
   },
